@@ -11,7 +11,7 @@ import { map } from 'rxjs/operators';
   standalone: true,
   imports: [CommonModule,TableModule,FiltersComponent],
   templateUrl: './table.component.html',
-  styleUrl: './table.component.css'
+  styleUrls: ['./table.component.css']
 })
 export class TableComponent {
   users$;
