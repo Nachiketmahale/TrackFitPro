@@ -1,27 +1,140 @@
-# Trackfitpro
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+<h1 align="center">
+  <br>
+  <a href=""><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
+  <br>
+  TrackFitPro
+  <br>
+</h1>
 
-## Development server
+<!-- Features -->
+## 🎨 Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1️⃣ 📝 **Workout Logging** 
+- Users can easily add and track their fitness progress.
 
-## Code scaffolding
+2️⃣ 🔍 Smart Search & Filter
+- Search by Name to quickly find user records.
+- Filter by Workout Type.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3️⃣ 📊 Visual Progress Tracking (Optional Chart Feature) 
 
-## Build
+- View workout data in bar charts for better insights.
+- Track total workout minutes per user.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4️⃣ 🛠️ Local Storage 
 
-## Running unit tests
+- Saves all user workouts in localStorage, ensuring persistence.
+- Preloaded with sample users for quick testing.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<!-- Tech Stack -->
 
-## Running end-to-end tests
+## 🛠️ **Tech Stack** 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+🌐 **Frontend:**
+- ✅ Angular 14+ – Framework for building the SPA (Single Page Application).
+- ✅ TypeScript – Strongly typed JavaScript for better code management.
+- ✅ Angular Material – UI components for forms, tables, and dropdowns.
+- ✅ PrimeNG – Additional UI elements for a sleek design.
+- ✅ Tailwind CSS – Utility-first CSS framework for styling.
 
-## Further help
+📦 **Data Management:**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- ✅ LocalStorage – Stores user workout data persistently in the browser.
+
+📊 **Charts & Visualization: (Optional Feature)**
+
+- ✅ Chart.js / ngx-charts – Used for displaying workout progress graphs.
+
+🧪 **Testing & Code Quality:**
+- ✅ Jasmine & Karma – Unit testing for components & services.
+- ✅ 100% Code Coverage – Ensures quality with test reports in README.
+
+<!-- Prerequisites -->
+
+## 📋 Prerequisites
+
+- **1️⃣ Node.js (v18.x recommended)** – Download & Install: Node.js Official Site
+- **2️⃣ NPM (v9+ or higher)** – Comes with Node.js (Check with npm -v)
+- **3️⃣ Angular CLI (v14+)** – Required to create and manage Angular projects (`npm install -g @angular/cli`)
+
+
+
+<!-- Installation -->
+
+## 📥 Installation
+- ✅ 1. Clone the Repository
+    ```bash
+    git clone https://github.com/Nachiketmahale/trackfitpro.git
+
+    cd fit-track
+    ```
+- 📦 2. Install Dependencies
+    ```bash
+    npm install
+    ```
+- 🛠 3. Configure Tailwind CSS (Optional - If Not Installed)
+    ```bash
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
+    ```
+<!-- Running the application -->
+## 🏃‍♂️ Running the Application
+
+1. Start the development server:
+    ```bash
+    ng serve
+    ```
+
+2. Open your browser and navigate to:
+    ```
+    http://localhost:4200
+    ```
+
+<!-- Usage -->
+## 📖 Usage Guide 
+
+
+**1️⃣ Adding a Workout 🏋️**
+- Go to the "Add Workout" section.
+- Enter your name, select a workout type (Running, Swimming, Yoga, Walking, Cycling).
+- Enter the workout duration (in minutes).
+- Click "Add Workout" to save the entry.
+
+**2️⃣ Viewing Workout History 📋**
+- The main table displays all recorded workouts.
+- The table includes user name, workout type, and total minutes logged.
+- Data is stored in local storage, so it remains saved even after refreshing the page.
+
+**3️⃣ Searching & Filtering 🔍**
+- Use the Search by Name field to find a specific user's workouts.
+- Use the Filter by Workout Type dropdown to view specific workout types (e.g., only Running or Swimming workouts).
+
+**4️⃣ Workout Progress & Analytics 📊 (Optional Feature)**
+- Users can view their workout data in charts (bar chart).
+- The charts help visualize total time spent on different workout types.
+
+**5️⃣ Pagination 📑**
+- If there are more than 5 users, the table includes pagination to navigate through records.
+
+<!-- Test Coverate -->
+
+## 🧪 Testing the App 
+   ```
+   ng test
+   ng test --code-coverage
+   ```
+   **Overall Test Coverage**
+   **Component Level Coverage**
+##  🚀 Build By
+ 👨‍💻 Developed by [Nachiket Mahale](https://github.com/your-github)  
+
+## 🎯 Built For  
+🏋️ Designed for **Fitness Enthusiasts, Athletes, and Health Trackers**
+
+## 🎉 Inspired  By  
+[![Fyle](https://img.shields.io/badge/Powered%20By-Fyle-blue?style=flat&logo=fyle)](https://www.fylehq.com)
+
+## 📜 License
+
+This software is licensed under the [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) © [NHN Cloud](https://github.com/nhn).
