@@ -132,7 +132,7 @@ TrackFitPro
    ![image](./src/assets/img/user-data-service%20coverage.PNG)
 
 
-##  🚀 Build By
+##  🚀 Built By
  👨‍💻 Developed by [Nachiket Mahale](https://github.com/Nachiketmahale)  
 
 ## 🎯 Built For  
