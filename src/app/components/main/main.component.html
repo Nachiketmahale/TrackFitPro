@@ -1,1 +1,37 @@
-<p>main works!</p>
+<div *ngIf="sidebarSelected === 'All'">
+
+    <app-header></app-header>
+    <app-table></app-table>
+
+</div>
+<div *ngIf="sidebarSelected !== 'All'">
+    <div *ngFor="let user of users">
+       
+        <div *ngIf="user.name === sidebarSelected">
+            <div class="text-5xl font-semibold mb-8"> 😃 {{ user.name }}'s Workout Progress</div>
+
+            <div class="p-4 w-full">
+                <div class="grid grid-cols-12 gap-4">
+
+                    <div *ngFor="let workout of user.workouts" class="col-span-12 sm:col-span-6 md:col-span-3">
+                        <div class="flex flex-row bg-white dark:bg-[#1F1F1F] border dark:border-[#333] shadow-sm rounded-2xl p-4">
+                           
+                            <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl text-2xl">
+                                {{ getWorkoutEmoji(workout.type) }}
+                            </div>
+
+                            <div class="flex flex-col flex-grow ml-4">
+                                <div class="text-sm text-gray-500 dark:text-gray-400"> {{ workout.type }}</div>
+                                <div class="font-bold text-lg">{{ workout.minutes }} min</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <app-user-chart [user]="user"></app-user-chart>
+        </div>
+    </div>
+
+</div>

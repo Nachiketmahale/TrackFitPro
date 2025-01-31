@@ -1,13 +1,22 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+// import { SidebarComponent } from './components/sidebar/sidebar/sidebar.component';
+// import { MainComponent } from './components/main/main/main.component';
+import { SidebarComponent } from './component/sidebar/sidebar.component';
 
+import { MainComponent } from './component/main/main.component';
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,SidebarComponent,MainComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  standalone: true,
 })
 export class AppComponent {
-  title = 'trackfitpro';
+  title = 'fit-track';
+
+  sidebarSelected: string = 'All';
+  onSidebarChange(selected: string): void {
+    this.sidebarSelected = selected;
+  }
 }

@@ -1,1 +1,18 @@
-<p>header works!</p>
+<div class="flex justify-between">
+    <div class="mb-8">
+        <div class="text-4xl">Good</div>
+        <div class="text-5xl font-semibold flex">{{ greeting }} <div class="waving-hand">👋</div></div>
+        <!-- moving hi  -->
+        <!-- <div class="animate-wave text-4xl mt-4">
+            
+        </div> -->
+        
+    </div>
+
+    <div class="header">
+        <form [formGroup]="formGroup">
+            <p-selectbutton [options]="stateOptions" formControlName="toggle"
+                (onChange)="onToggleChange($event)"></p-selectbutton>
+        </form>
+    </div>
+</div>

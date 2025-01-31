@@ -1,0 +1,25 @@
+/* Waving hand emoji style */
+.waving-hand {
+    font-size: 50px;  /* You can adjust the size here */
+    animation: wave 1s ease-in-out infinite; /* Applying the wave animation */
+    cursor: pointer;
+  }
+
+  /* Keyframes for the waving animation */
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg); /* No rotation at the start */
+    }
+    25% {
+      transform: rotate(-15deg); /* Rotate left */
+    }
+    50% {
+      transform: rotate(15deg); /* Rotate right */
+    }
+    75% {
+      transform: rotate(-15deg); /* Rotate left again */
+    }
+    100% {
+      transform: rotate(0deg); /* Return to original position */
+    }
+  }
