@@ -13,7 +13,7 @@ import { MainComponent } from './components/main/main.component';
   standalone: true,
 })
 export class AppComponent {
-  title = 'fit-track';
+  title = 'Track-Fit-Pro';
 
   sidebarSelected: string = 'All';
   onSidebarChange(selected: string): void {

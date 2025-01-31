@@ -28,47 +28,46 @@ export class UserDataService {
       id: 2,
       name: 'Sushmita More',
       workouts: [
-        { type: 'Yoga', minutes: 60 },
-        { type: 'Pilates', minutes: 40 },
+        { type: 'Running', minutes: 60 },
+        { type: 'Swimming', minutes: 40 },
       ],
     },
     {
       id: 3,
-      name: 'Ravi Kuma',
+      name: 'John Doe',
       workouts: [
-        { type: 'Weightlifting', minutes: 45 },
-        { type: 'Running', minutes: 20 },
-        { type: 'Cycling', minutes: 30 },
+        { type: 'Running', minutes: 30 },
+        { type: 'Cycling', minutes: 45 },
       ],
     },
     {
       id: 4,
-      name: 'Sneha Patel',
+      name: 'Jane Smith',
       workouts: [
-        { type: 'Swimming', minutes: 35 },
-        { type: 'Yoga', minutes: 50 },
+        { type: 'Swimming', minutes: 60 },
+        { type: 'Running', minutes: 20 },
       ],
     },
     {
       id: 5,
-      name: 'Vikram Singh',
+      name: 'Mike Johnson',
       workouts: [
-        { type: 'Boxing', minutes: 30 },
-        { type: 'Running', minutes: 40 },
+        { type: 'Yoga', minutes: 50 },
+        { type: 'Cycling', minutes: 40 },
       ],
     },
     {
       id: 6,
-      name: 'Pooja Nair',
+      name: 'Rahul Vernekar',
       workouts: [
-        { type: 'Pilates', minutes: 45 },
+        { type: 'Walking', minutes: 45 },
         { type: 'Cycling', minutes: 60 },
         { type: 'Yoga', minutes: 30 },
       ],
     },
     {
       id: 7,
-      name: 'Rohan Das',
+      name: 'Sahil Pisat',
       workouts: [
         { type: 'Weightlifting', minutes: 50 },
         { type: 'Swimming', minutes: 40 },
@@ -76,7 +75,7 @@ export class UserDataService {
     },
     {
       id: 8,
-      name: 'Anjali Verma',
+      name: 'Aarya Thorat',
       workouts: [
         { type: 'Cycling', minutes: 55 },
         { type: 'Running', minutes: 35 },
@@ -85,7 +84,7 @@ export class UserDataService {
     },
     {
       id: 9,
-      name: 'Karan Malhotra',
+      name: 'Rohit Patil',
       workouts: [
         { type: 'Boxing', minutes: 45 },
         { type: 'Weightlifting', minutes: 60 },
@@ -93,9 +92,9 @@ export class UserDataService {
     },
     {
       id: 10,
-      name: 'Deepika Joshi',
+      name: 'Vivek Patil',
       workouts: [
-        { type: 'Swimming', minutes: 40 },
+        { type: 'Other', minutes: 40 },
         { type: 'Running', minutes: 30 },
       ],
     },
