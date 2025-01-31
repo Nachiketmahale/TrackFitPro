@@ -1,11 +1,9 @@
 
-<h1 align="center">
-  <br>
-  <a href=""><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
-  <br>
-  TrackFitPro
-  <br>
-</h1>
+<h2 style="text-align:center">
+TrackFitPro
+</h2>
+
+  ![Logo](src/assets/img/Capture1.PNG)
 
 <!-- Features -->
 ## 🎨 Features
@@ -125,9 +123,17 @@
    ng test --code-coverage
    ```
    **Overall Test Coverage**
+   ![image](./src/assets/img/Code%20Coverage%20for%20all%20files.PNG)
    **Component Level Coverage**
+  
+  **1️⃣ Filter Component**
+   ![image](./src/assets/img/filter%20coverage.PNG)
+  **2️⃣ User-Data Service**
+   ![image](./src/assets/img/user-data-service%20coverage.PNG)
+
+
 ##  🚀 Build By
- 👨‍💻 Developed by [Nachiket Mahale](https://github.com/your-github)  
+ 👨‍💻 Developed by [Nachiket Mahale](https://github.com/Nachiketmahale)  
 
 ## 🎯 Built For  
 🏋️ Designed for **Fitness Enthusiasts, Athletes, and Health Trackers**
@@ -135,6 +141,3 @@
 ## 🎉 Inspired  By  
 [![Fyle](https://img.shields.io/badge/Powered%20By-Fyle-blue?style=flat&logo=fyle)](https://www.fylehq.com)
 
-## 📜 License
-
-This software is licensed under the [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) © [NHN Cloud](https://github.com/nhn).
