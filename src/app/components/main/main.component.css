@@ -1,0 +1,94 @@
+/* Main Container */
+.main-container {
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+/* User Workout Section */
+.user-container {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* User Title */
+.user-title {
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* User Emoji */
+.user-emoji {
+    font-size: 35px;
+    animation: bounce 1s infinite alternate;
+}
+
+/* Emoji Bounce Animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+/* Workout List */
+.workout-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+/* Workout Card */
+.workout-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.workout-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Workout Icon */
+.workout-icon {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/* Workout Details */
+.workout-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.workout-type {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.workout-time {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .user-title {
+        font-size: 24px;
+    }
+
+    .workout-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}

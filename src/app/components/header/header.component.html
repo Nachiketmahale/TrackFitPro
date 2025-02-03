@@ -1,18 +1,20 @@
-<div class="flex justify-between">
-    <div class="mb-8">
+<div class="header-container">
+    <div class="greeting-container">
         <div class="text-4xl">Good</div>
-        <div class="text-5xl font-semibold flex">{{ greeting }} <div class="waving-hand">👋</div></div>
-        <!-- moving hi  -->
-        <!-- <div class="animate-wave text-4xl mt-4">
-            
-        </div> -->
-        
+        <div class="text-5xl font-semibold flex">
+            {{ greeting }}
+            <span class="waving-hand">👋</span>
+        </div>
     </div>
 
-    <div class="header">
+    <div class="toggle-container">
         <form [formGroup]="formGroup">
-            <p-selectbutton [options]="stateOptions" formControlName="toggle"
-                (onChange)="onToggleChange($event)"></p-selectbutton>
+            <p-selectbutton 
+                [options]="stateOptions" 
+                formControlName="toggle"
+                (onChange)="onToggleChange($event)" 
+                class="toggle-button">
+            </p-selectbutton>
         </form>
     </div>
 </div>

@@ -1,0 +1,14 @@
+/* table.component.css */
+.container {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .table-container {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+  

@@ -1,25 +1,104 @@
-/* Waving hand emoji style */
+/* General Header Styling */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Greeting Section */
+.greeting-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.text-4xl {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.text-5xl {
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Waving Hand Animation */
 .waving-hand {
-    font-size: 50px;  
-    animation: wave 1s ease-in-out infinite; 
-    cursor: pointer;
+  font-size: 50px;
+  display: inline-block;
+  animation: wave 1s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Waving Animation */
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-15deg); }
+  50% { transform: rotate(15deg); }
+  75% { transform: rotate(-15deg); }
+}
+
+/* Toggle Section */
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Toggle Button Styling */
+.p-selectbutton {
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 2px solid #007bff;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.p-selectbutton .p-button {
+  flex: 1;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  color: #555;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.p-selectbutton .p-button.p-highlight {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.p-selectbutton .p-button:hover {
+  background: rgba(0, 123, 255, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
   }
 
-  /* Keyframes for the waving animation */
-  @keyframes wave {
-    0% {
-      transform: rotate(0deg); /* No rotation at the start */
-    }
-    25% {
-      transform: rotate(-15deg); /* Rotate left */
-    }
-    50% {
-      transform: rotate(15deg); /* Rotate right */
-    }
-    75% {
-      transform: rotate(-15deg); /* Rotate left again */
-    }
-    100% {
-      transform: rotate(0deg); /* Return to original position */
-    }
+  .toggle-container {
+      justify-content: center;
   }
+}
