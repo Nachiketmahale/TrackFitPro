@@ -67,7 +67,7 @@ export class FiltersComponent {
   }
 
   onWorkoutFilterChange(event: Event): void {
-    this.workoutFilterChange.emit((event.target as HTMLInputElement).value);
+    this.workoutFilterChange.emit((event.target as HTMLSelectElement).value);
   }
 
   private resetForm(): void {

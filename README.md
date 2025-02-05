@@ -1,6 +1,6 @@
 
 <h2 style="text-align:center">
-TrackFitPro
+TrackFitPro : A Fully responsive WebApp
 </h2>
 
   ![Logo](src/assets/img/Capture1.PNG)

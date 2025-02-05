@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UserDataService } from '../../services/user-data.service';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { of } from 'rxjs';
 
 import { By } from '@angular/platform-browser';
@@ -21,7 +21,7 @@ describe('FiltersComponent', () => {
 
 
     await TestBed.configureTestingModule({
-      imports: [CommonModule, FiltersComponent],
+      imports: [CommonModule, FiltersComponent,BrowserAnimationsModule],
       providers: [
         { provide: UserDataService, useValue: userDataServiceMock },
       ],
@@ -96,26 +96,34 @@ describe('FiltersComponent', () => {
     expect(userDataServiceMock.addOrUpdateUser).not.toHaveBeenCalled();
   });
 
+  
+
   it('should emit nameFilterChange when onNameFilterChange() is called', () => {
     spyOn(component.nameFilterChange, 'emit');
-    
-    const inputElement = fixture.debugElement.query(By.css('input[name="name"]')).nativeElement;
+    component.showDialog();
+    fixture.detectChanges();
+    const inputElement = fixture.debugElement.query(By.css('input#filterByName')).nativeElement; 
+    expect(inputElement).toBeTruthy();
     inputElement.value = 'John';
     inputElement.dispatchEvent(new Event('input'));
-    
     expect(component.nameFilterChange.emit).toHaveBeenCalledWith('John');
   });
+  
+
+  
 
   it('should emit workoutFilterChange when onWorkoutFilterChange() is called', () => {
     spyOn(component.workoutFilterChange, 'emit');
-    
-    const inputElement = fixture.debugElement.query(By.css('input[name="workoutType"]')).nativeElement;
-    inputElement.value = 'Running';
-    inputElement.dispatchEvent(new Event('input'));
-    
+    component.showDialog();
+    fixture.detectChanges();
+    const selectElement = fixture.debugElement.query(By.css('select#filterByWorkout')).nativeElement;
+    expect(selectElement).toBeTruthy();
+    selectElement.value = 'Running';
+    selectElement.dispatchEvent(new Event('change'));
     expect(component.workoutFilterChange.emit).toHaveBeenCalledWith('Running');
   });
 
+  
   it('should capitalize words in name and workoutType', () => {
     const name = 'john doe';
     const workoutType = 'running';
