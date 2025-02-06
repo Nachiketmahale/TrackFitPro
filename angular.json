@@ -25,7 +25,8 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/themes/custom-theme.css"
             ],
             "scripts": []
           },
@@ -83,7 +84,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/themes/custom-theme.css"
             ],
             "scripts": []
           }

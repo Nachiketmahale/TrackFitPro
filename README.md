@@ -57,7 +57,6 @@ TrackFitPro : A Fully responsive WebApp
 - **3️⃣ Angular CLI (v14+)** – Required to create and manage Angular projects (`npm install -g @angular/cli`)
 
 
-
 <!-- Installation -->
 
 ## 📥 Installation
